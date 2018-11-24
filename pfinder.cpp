@@ -54,7 +54,6 @@ void PFinder::NextStep(){
         //calculer dist <>goal et <>init
         if(!i.visited && !i.obs){
             //cout<<i.obs<<endl;
-            nb++;
             auto v=calcP(i);
             if(best>v){
                     best=v;
@@ -74,17 +73,17 @@ void PFinder::NextStep(){
 vector<point> PFinder::findPath(){
     while(current.x != goal.x || current.y != goal.y) {
         NextStep();
+        nb++;
         cout<<"current ="<<current.x<<":"<<current.y<<endl;
 #ifdef DEBUG
     cout<<"calling NextStep!!!"<<endl;
 #endif
     }
-    cout<<"gut"<<endl;
+    cout<<"done!!\n";
     return _map;
 }
 
-
 void PFinder::showMap(){
-    cout<<"The Map :"<<endl;
+    //cout<<"The Map :"<<endl;
 
 }

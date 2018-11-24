@@ -28,5 +28,11 @@ public:
     void showMap();
     vector<point> findPath();
 };
-
+/*
+ *
+ * intégrer les 2 listes
+ * a jouter l'heuristique (F,G,H)
+ *
+ *
+ * */
 #endif // PFINDER_H
