@@ -6,6 +6,7 @@
 #include<iostream>
 #include<math.h>
 
+
 typedef struct{
     size_t x=0,y=0;
     bool visited=false,obs=false;
